@@ -1,4 +1,4 @@
-# Kali NetHunter on Samsung Galaxy Note 10+ (d2s / SM-N975F)
+# Kali NetHunter - SM Galaxy Note 10+ (d2s / SM-N975F)
 
 Custom kernel + KernelSU-Next + Kali NetHunter on **LineageOS 23.2 microG** (Android 16) for the Exynos 9825 Note 10+.
 
