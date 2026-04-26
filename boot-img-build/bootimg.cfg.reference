@@ -1,0 +1,12 @@
+# LineageOS 23.2 microG d2s — boot.img header reference
+# Extracted via: abootimg -x los-stock-boot.img bootimg.cfg zImage initrd.img dtb
+# These values are also hardcoded into pack-boot-img.sh.
+
+bootsize    = 0x3700000
+pagesize    = 0x800
+kerneladdr  = 0x10008000
+ramdiskaddr = 0x11000000
+secondaddr  = 0x0
+tagsaddr    = 0x10000100
+name        =
+cmdline     =  androidboot.super_partition=system

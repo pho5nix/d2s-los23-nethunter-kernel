@@ -1,0 +1,40 @@
+# Build artifacts
+out/
+*.o
+*.ko
+*.a
+*.gz
+*.gzip
+*.tar.gz
+*.tar.xz
+
+# Source trees we shouldn't redistribute
+freerunner-src/
+KernelSU-Next/
+*.tar
+*.zip
+!Anykernel*.zip
+
+# Pre-built kernel (large, optional asset)
+# Comment the next line if you want to commit the prebuilt boot.img
+prebuilt/*.img
+
+# Toolchain
+ZyClang-23/
+clang-*/
+
+# Logs
+*.log
+*.txt.bak
+build-*.txt
+
+# Editor / OS junk
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local testing
+test/
+scratch/
