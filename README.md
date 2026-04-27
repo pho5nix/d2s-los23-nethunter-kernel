@@ -31,7 +31,7 @@ The working approach uses **FreeRunner kernel source** (`Lordify97/FreeRunnerKer
 
 ## Hardware/software prerequisites
 
-- Galaxy Note 10+ (SM-N975F) — d2s codename, Exynos 9825 SoC
+- Device: Samsung Galaxy Note 10+ (SM-N975F). Codename: d2s. SoC: Exynos 9825
 - OEM unlocked bootloader (Settings → Developer options → OEM unlocking)
 - LineageOS 23.2 microG (or any LOS 23 build) flashed and booted
 - A Linux build host (or WSL2 with build dir on **ext4** - NOT on `/mnt/c`, `/mnt/x`, etc.)
@@ -40,6 +40,7 @@ The working approach uses **FreeRunner kernel source** (`Lordify97/FreeRunnerKer
 - Heimdall flasher (Linux/macOS/Windows)
 - ADB
 - Approximately 4 GB total downloads (toolchain, source, chroot)
+- Zadig (for binding WinUSB to the gadget serial device - check Device Manager if on Windows)
 
 **WSL2 case-insensitivity warning**: If you use WSL2 on Windows, build *only* under `~/` (your Linux home dir, ext4). Building on `/mnt/x/...` or `/mnt/c/...` (NTFS via 9p) will silently fail because `xt_HL.c` and `xt_hl.c` collide. This is also true for `/mnt/wsl` and any drvfs mount.
 
@@ -385,7 +386,6 @@ This guide just connects the dots that already exist. Full credit belongs upstre
 ## Files in this repo
 
 ```
-.
 ├── README.md                              # This file
 ├── boot-img-build/
 │   ├── pack-boot-img.sh                   # Stage 4 helper script
@@ -404,7 +404,7 @@ This guide just connects the dots that already exist. Full credit belongs upstre
 
 ## License
 
-The kernel source itself is **GPL-2.0** (Linux kernel). The boot.img repacking scripts and this documentation are **MIT** unless otherwise noted. Respect upstream licenses for KernelSU-Next, NetHunter, and FreeRunnerKernel.
+The kernel source itself is **GPL-2.0** (Linux kernel). The boot.img repacking scripts and this documentation are **MIT** unless otherwise noted. Respect upstream licenses for KernelSU-Next, NetHunter and FreeRunnerKernel.
 
 ---
 
